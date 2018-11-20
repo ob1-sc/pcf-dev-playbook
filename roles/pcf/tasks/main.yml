@@ -1,0 +1,9 @@
+- name: install apt packages
+  apt:
+    name:
+      - htop
+      - gdebi
+      - tree
+
+- name: install and configure vim
+  include: vim/install.yml

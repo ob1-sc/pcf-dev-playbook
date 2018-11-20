@@ -1,0 +1,17 @@
+- name: setup pcf development tooling
+  hosts: localhost
+  become: true
+
+  pre_tasks:
+    - name: upgrade apt repositories
+      apt:
+        update_cache: true
+
+  roles:
+    - pcf
+
+  post_tasks:
+    - name: cleanup apt packages
+      apt:
+        autoclean: true
+        autoremove: true
