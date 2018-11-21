@@ -1,5 +1,5 @@
 ---
-- name: setup pcf development tooling
+- name: setup pcf operator environment
   hosts: localhost
   become: true
 
@@ -9,6 +9,9 @@
         update_cache: true
 
   roles:
+    - vim
+    - tmux
+    - misc
     - pcf
 
   post_tasks:

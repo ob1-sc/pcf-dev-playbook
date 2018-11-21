@@ -1,6 +1,4 @@
 ---
-user: ubuntu
-
 om_cli:
   repository: pivotal-cf/om
   install_location: /usr/local/bin/om

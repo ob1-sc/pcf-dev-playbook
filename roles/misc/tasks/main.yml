@@ -1,0 +1,7 @@
+---
+- name: install apt packages
+  apt:
+    name:
+      - htop
+      - gdebi
+      - tree

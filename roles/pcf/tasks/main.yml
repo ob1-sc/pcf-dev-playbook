@@ -1,14 +1,4 @@
 ---
-- name: install apt packages
-  apt:
-    name:
-      - htop
-      - gdebi
-      - tree
-
-- name: install and configure vim
-  include: vim/install.yml
-
 - name: install om cli
   include: install-github-release.yml
   vars:

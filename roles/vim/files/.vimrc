@@ -18,8 +18,9 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
-" set the colorscheme
-colorscheme gruvbox
+" set the colorscheme (silent in case colorscheme has not yet been installed,
+" ie first run before PluginInstall)
+:silent! colorscheme gruvbox
 set background=dark    
 
 " linenumber settings
