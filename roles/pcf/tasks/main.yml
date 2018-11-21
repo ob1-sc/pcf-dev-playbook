@@ -33,7 +33,7 @@
 - name: install cf cli
   include: install-cf-cli.yml
 
-- name: isntall terraform cli
+- name: install terraform cli
   include: install-terraform-cli.yml
   
 - name: install packer cli
