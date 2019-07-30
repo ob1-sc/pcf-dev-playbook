@@ -2,6 +2,9 @@
 - name: install apt packages
   apt:
     name:
+      - git
       - htop
       - gdebi
       - tree
+      - vim
+      - tmux

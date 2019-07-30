@@ -1,6 +1,6 @@
 ---
 - name: setup pcf operator environment
-  hosts: localhost
+  hosts: all
   become: true
 
   pre_tasks:
@@ -9,8 +9,7 @@
         update_cache: true
 
   roles:
-    - vim
-    - tmux
+    - python
     - misc
     - pcf
 
@@ -19,3 +18,13 @@
       apt:
         autoclean: true
         autoremove: true
+
+- name: setup vagrant user
+  hosts: pcf-vagrant-client
+  vars:
+    user: vagrant
+  become: true
+
+  roles:
+    - vim
+    - tmux
