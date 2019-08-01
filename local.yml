@@ -9,6 +9,7 @@
         update_cache: true
 
   roles:
+    - lastpass
     - python
     - misc
     - pcf
@@ -26,5 +27,6 @@
   become: true
 
   roles:
+    - lastpass-user
     - vim
     - tmux
