@@ -25,10 +25,16 @@
 
 - name: install terraform cli
   include: install-terraform-cli.yml
-  
+
 - name: install packer cli
   include: install-packer-cli.yml
 
 - name: install aws cli
   include: install-aws-cli.yml
+
+- name: install jq cli
+  include: install-github-release.yml
+  vars:
+    repository: "{{jq_cli.repository}}"
+    install_location: "{{jq_cli.install_location}}"
 

@@ -14,7 +14,7 @@ bbl_cli:
 bosh_cli:
   repository: cloudfoundry/bosh-cli
   install_location: /usr/local/bin/bosh
-  
+
 cf_cli:
   install_location: /usr/local/bin
 
@@ -23,4 +23,8 @@ terraform_cli:
 
 packer_cli:
   install_location: /usr/local/bin
+
+jq_cli:
+  repository: stedolan/jq
+  install_location: /usr/local/bin/jq
 
