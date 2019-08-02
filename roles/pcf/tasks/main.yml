@@ -32,6 +32,9 @@
 - name: install aws cli
   include: install-aws-cli.yml
 
+- name: install azure cli
+  include: install-azure-cli.yml
+
 - name: install jq cli
   include: install-github-release.yml
   vars:
