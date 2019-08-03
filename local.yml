@@ -12,6 +12,7 @@
 
   roles:
     - lastpass
+    - docker-ce
     - python
     - misc
     - pcf
@@ -30,5 +31,6 @@
 
   roles:
     - lastpass-user
+    - docker-user
     - vim
     - tmux
