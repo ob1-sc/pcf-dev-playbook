@@ -41,3 +41,9 @@
     repository: "{{jq_cli.repository}}"
     install_location: "{{jq_cli.install_location}}"
 
+- name: install texplate cli
+  include: install-github-release.yml
+  vars:
+    repository: "{{texplate_cli.repository}}"
+    install_location: "{{texplate_cli.install_location}}"
+

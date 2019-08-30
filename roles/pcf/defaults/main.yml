@@ -28,3 +28,6 @@ jq_cli:
   repository: stedolan/jq
   install_location: /usr/local/bin/jq
 
+texplate_cli:
+  repository: pivotal-cf/texplate
+  install_location: /usr/local/bin/texplate
