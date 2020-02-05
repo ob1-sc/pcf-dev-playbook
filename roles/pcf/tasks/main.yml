@@ -20,6 +20,11 @@
 - name: install bosh cli
   include: install-bosh-cli.yml
 
+- name: install credhub cli
+  include: install-credhub-cli.yml
+  vars:
+    repository: "{{credhub_cli.repository}}"
+
 - name: install cf cli
   include: install-cf-cli.yml
 

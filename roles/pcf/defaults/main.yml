@@ -15,11 +15,16 @@ bosh_cli:
   repository: cloudfoundry/bosh-cli
   install_location: /usr/local/bin/bosh
 
+credhub_cli:
+  repository: cloudfoundry-incubator/credhub-cli
+  install_location: /usr/local/bin
+
 cf_cli:
   install_location: /usr/local/bin
 
 terraform_cli:
   install_location: /usr/local/bin
+  #  version: 0.11.14
 
 packer_cli:
   install_location: /usr/local/bin
