@@ -1,5 +1,5 @@
 ---
-- name: setup pcf operator environment
+- name: setup tanzu operator environment
   hosts: all
   vars_files:
     - vars.yml
@@ -15,7 +15,7 @@
     - docker-ce
     - python
     - misc
-    - pcf
+    - tanzu
 
   post_tasks:
     - name: cleanup apt packages
@@ -24,7 +24,7 @@
         autoremove: true
 
 - name: setup vagrant user
-  hosts: pcf-vagrant-client
+  hosts: vagrant-workstation
   vars:
     user: vagrant
   become: true
