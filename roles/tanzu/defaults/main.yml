@@ -40,3 +40,9 @@ texplate_cli:
 kubectl:
   install_location: /usr/local/bin
   version: 1.17.8
+
+tkgi:
+  glob: tkgi-linux-amd64-*
+  release: 1.8.1
+  slug: pivotal-container-service
+  install_location: /usr/local/bin/tkgi
