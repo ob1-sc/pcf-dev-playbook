@@ -16,6 +16,7 @@
 - name: Add Docker CE PPA
   apt_repository:
     repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu "{{ubuntu_codename}}" stable
+    mode: "0644"
 
 - name: Install Docker CE
   apt:
