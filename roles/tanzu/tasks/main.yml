@@ -1,4 +1,7 @@
 ---
+- name: install kubectl
+  include: install-kubectl.yml
+  
 - name: install om cli
   include: install-github-release.yml
   vars:
