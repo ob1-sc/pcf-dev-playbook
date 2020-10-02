@@ -1,4 +1,9 @@
 ---
+gomplate_cli:
+  repository: hairyhenderson/gomplate
+  install_location: /usr/local/bin/gomplate
+  release_asset_filter: linux-amd64-slim
+  
 om_cli:
   repository: pivotal-cf/om
   install_location: /usr/local/bin/om

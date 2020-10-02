@@ -1,4 +1,11 @@
 ---
+- name: install gomplate cli
+  include: install-github-release.yml
+  vars:
+    repository: "{{gomplate_cli.repository}}"
+    install_location: "{{gomplate_cli.install_location}}"
+    release_asset_filter: "{{gomplate_cli.release_asset_filter}}"
+
 - name: install kubectl
   include: install-kubectl.yml
   
