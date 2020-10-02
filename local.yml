@@ -11,6 +11,7 @@
         update_cache: true
 
   roles:
+    - powershell
     - lastpass
     - docker-ce
     - python
